@@ -13,12 +13,12 @@
             
             <div class="mb-3">
                 <label for="numero1" class="form-label">Digite o número 1</label>
-                <input type="number" id="numero1" name="numero1" class="form-control">
+                <input type="number" id="numero1" name="numero1" class="form-control" required>
             </div>
         
             <div class="mb-3">
                 <label for="numero2" class="form-label">Digite o número 2</label>
-                <input type="number" id="numero2" name="numero2" class="form-control">
+                <input type="number" id="numero2" name="numero2" class="form-control" min="1" required>
             </div>
 
             <div class="mb-3">
