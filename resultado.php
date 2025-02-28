@@ -23,7 +23,7 @@
             elseif ($operador == "4")
                 $resultado = $valor1 / $valor2;
             
-            echo "O valor da soma é $resultado";
+            echo "O resultado é $resultado";
             
             } catch(Exception $e){
                 echo $e->getMessage();
