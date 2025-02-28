@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Exercício 1 ao 4</h1>
-    <form method="post" action="resultado.php"> <!-- action vai para outra página -->
+    <form method="post" action="1-4_result.php"> <!-- action vai para outra página -->
             
             <div class="mb-3">
                 <label for="numero1" class="form-label">Digite o número 1</label>

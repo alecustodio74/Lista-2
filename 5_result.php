@@ -7,23 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Resposta do exercício 1 ao 4</h1>
+    <h4>Resposta do exercício 5</h4>
     <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             try{
-            $valor1 = $_POST['numero1'];
-            $valor2 = $_POST['numero2'];
-            $operador = $_POST['operador'];
-            if ($operador == "1")
-                $resultado = $valor1 + $valor2;
-            elseif ($operador == "2")
-                $resultado = $valor1 - $valor2;
-            elseif ($operador == "3")
-                $resultado = $valor1 * $valor2;
-            elseif ($operador == "4")
-                $resultado = $valor1 / $valor2;
-            
-            echo "O resultado é $resultado";
+            $valor1 = $_POST['nota1'];
+            $valor2 = $_POST['nota2'];
+            $valor3 = $_POST['nota3'];
+            $media = ($valor1 + $valor2 + $valor3) / 3;
+            echo "A média é " . number_format($media,2,',','.');
             
             } catch(Exception $e){
                 echo $e->getMessage();
@@ -31,7 +23,7 @@
         }
     ?>
     <div class="col mt-2">
-         <button type="submit" class="btn btn-primary"><a href="somar.php" style="color: white; text-decoration: none;">Voltar</a></button>
+         <button type="submit" class="btn btn-primary"><a href="5_medias.php" style="color: white; text-decoration: none;">Voltar</a></button>
     </div>
 
 
